@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "shamith's portfolio webpage",
   "scripts": {
-    "dev": "webpack --config webpack.dev.js",
+    "dev": "webpack serve --config webpack.dev.js",
+    "dev:bundle": "webpack --config webpack.dev.js",
     "build": "webpack build --config webpack.prod.js"
   },
   "keywords": [],
