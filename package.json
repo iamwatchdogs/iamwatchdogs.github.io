@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "shamith's portfolio webpage",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --config webpack.dev.js",
+    "build": "webpack build --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
