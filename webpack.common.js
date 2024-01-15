@@ -1,13 +1,13 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
-        index: './src/scripts/index.js',
+        index: "./src/scripts/index.js",
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: '[name].min.js',
+        path: path.resolve(__dirname, "dist"),
+        filename: "[name].min.js",
     },
     module: {
         rules: [
@@ -15,9 +15,9 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
+                    loader: "babel-loader",
                     options: {
-                        presets: ['@babel/preset-env'],
+                        presets: ["@babel/preset-env"],
                     },
                 },
             },
@@ -25,12 +25,12 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Meet Shamith',
-            template: './src/index.html',
-            filename: '../index.html',
+            title: "Meet Shamith",
+            template: "./src/index.html",
+            filename: "../index.html",
             hash: true,
             cache: true,
-            favicon: '',    // will add soon
+            favicon: "", // will add soon
         }),
     ],
 };
