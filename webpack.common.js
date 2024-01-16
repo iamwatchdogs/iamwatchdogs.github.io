@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].min.js",
+    filename: "[name].[contenthash].js",
   },
   module: {
     rules: [
@@ -35,7 +35,6 @@ module.exports = {
       title: "Meet Shamith",
       template: "./src/index.html",
       filename: "../index.html",
-      hash: true,
       cache: true,
       favicon: "", // will add soon
     }),
