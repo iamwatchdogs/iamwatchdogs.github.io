@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <!-- meta tags -->
-        <%= require('html-loader!./templates/meta.html').default %>
+  <head>
+    <!-- meta tags -->
+    <%= require('html-loader!./templates/meta.html').default %>
 
-        <!-- Will add icon later -->
-        <!-- 
+    <!-- Will add icon later -->
+    <!-- 
             <link rel="icon" href="src" type="image/icon-x" />
         -->
 
-        <title><%= htmlWebpackPlugin.options.title %></title>
-    </head>
-    <body>
-        <div id="root">
-            <div id="main-container">
-                <!-- Header section -->
-                <%= require('html-loader!./templates/header.html').default %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="main-container">
+        <!-- Header section -->
+        <%= require('html-loader!./templates/header.html').default %>
 
-                <!-- Main section -->
-                <%= require('html-loader!./templates/main.html').default %>
+        <!-- Main section -->
+        <%= require('html-loader!./templates/main.html').default %>
 
-                <!-- Footer section -->
-                <%= require('html-loader!./templates/footer.html').default %>
-            </div>
-        </div>
-    </body>
+        <!-- Footer section -->
+        <%= require('html-loader!./templates/footer.html').default %>
+      </div>
+    </div>
+  </body>
 </html>
