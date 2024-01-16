@@ -7,8 +7,7 @@
     "dev:bundle": "webpack --config webpack.dev.js",
     "build": "webpack build --config webpack.prod.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "shamtih-nakka",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.23.7",
