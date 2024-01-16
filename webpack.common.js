@@ -12,6 +12,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.ejs$/,
+        loader: "ejs-loader",
+        options: {
+          esModule: false,
+        },
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
