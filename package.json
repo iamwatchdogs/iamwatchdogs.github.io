@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "shamith's portfolio webpage",
   "scripts": {
-    "dev": "webpack serve --config webpack.dev.js",
-    "dev:bundle": "webpack --config webpack.dev.js",
-    "build": "webpack build --config webpack.prod.js",
-    "build:analyze": "webpack build --config webpack.analyze.js"
+    "dev": "webpack serve --config ./configs/webpack.dev.js",
+    "dev:bundle": "webpack --config ./configs/webpack.dev.js",
+    "build": "webpack build --config ./configs/webpack.prod.js",
+    "build:analyze": "webpack build --config ./configs/webpack.analyze.js"
   },
   "author": "shamtih-nakka",
   "license": "ISC",
