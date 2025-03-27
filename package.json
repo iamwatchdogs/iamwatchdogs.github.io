@@ -1,0 +1,22 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.0.0",
+  "author": "Shamith",
+  "description": "A personal portfolio website to showcase my projects and skills.",
+  "license": "MIT",
+  "private": true,
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamwatchdogs/iamwatchdogs.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamwatchdogs/iamwatchdogs.github.io/issues"
+  },
+  "homepage": "https://github.com/iamwatchdogs/iamwatchdogs.github.io#readme"
+}
