@@ -9,8 +9,21 @@
     "dev": "webpack serve --mode=development",
     "build": "webpack --mode=production  --stats=verbose",
     "build:analyze": "webpack --mode=production  --stats=verbose --analyze",
-    "lint": "eslint . --color",
-    "lint:fix": "eslint . --fix --color"
+    "lint": "eslint . --cache --max-warnings=0 --no-warn-ignored",
+    "lint:fix": "eslint . --cache --fix --max-warnings=0 --no-warn-ignored",
+    "prettier": "prettier . --write --ignore-unknown",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*.{js,json,css,html}": [
+      "eslint . --cache --max-warnings=0 --no-warn-ignored",
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
@@ -30,10 +43,15 @@
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
     "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
     "globals": "^16.0.0",
     "html-minimizer-webpack-plugin": "^5.0.1",
     "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "mini-css-extract-plugin": "^2.9.2",
+    "prettier": "^3.5.3",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.14",
     "webpack": "^5.98.0",
