@@ -12,6 +12,7 @@
     "lint": "eslint . --cache --max-warnings=0 --no-warn-ignored",
     "lint:fix": "eslint . --cache --fix --max-warnings=0 --no-warn-ignored",
     "prettier": "prettier . --write --ignore-unknown",
+    "prettier:check": "prettier . --check --ignore-unknown",
     "prepare": "husky"
   },
   "lint-staged": {
