@@ -1,0 +1,49 @@
+{
+	"name": "Jekyll Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/ruby:3.1",
+
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/dhoeric/features/act:1": {},
+		"ghcr.io/devcontainers-extra/features/bash-command:1": {}
+	},
+
+	"forwardPorts": [4000, 35729],
+
+	"postCreateCommand": "chmod +x ./scripts/setup.sh && ./scripts/setup.sh",
+
+	"runArgs": ["--env-file", ".env"],
+
+	"portsAttributes": {
+		"4000": {
+			"label": "Jekyll Serve",
+			"onAutoForward": "notify"
+		},
+		"35729": {
+			"label": "LiveReload",
+			"onAutoForward": "silent"
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"DavidAnson.vscode-markdownlint",
+				"ginfuru.ginfuru-vscode-jekyll-syntax",
+				"redhat.vscode-yaml",
+				"streetsidesoftware.code-spell-checker",
+				"naumovs.color-highlight",
+				"esbenp.prettier-vscode",
+				"file-icons.file-icons",
+				"donjayamanne.git-extension-pack",
+				"me-dutour-mathieu.vscode-github-actions",
+				"bierner.github-markdown-preview",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"davidlday.languagetool-linter"
+			],
+      "settings": {
+        "git.terminalAuthentication": true
+      }
+		}
+	}
+}
