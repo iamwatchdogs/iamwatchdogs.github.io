@@ -17,4 +17,7 @@ export PAGES_REPO_NWO=byanko55/jekyll-professional-resume
 log "Building Jekyll site for production..."
 JEKYLL_ENV=production bundle exec jekyll build --trace
 
+log "Fixing script tag issues in generated HTML files..."
+./scripts/script-tag-fix.py
+
 log "Build complete! Output directory: _site/"
