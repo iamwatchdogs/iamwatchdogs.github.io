@@ -11,6 +11,9 @@ log() {
 log "Cleaning previous build..."
 bundle exec jekyll clean
 
+log "Setting GitHub Pages repository name for \`remote_theme\`..."
+export PAGES_REPO_NWO=byanko55/jekyll-professional-resume
+
 log "Building Jekyll site for production..."
 JEKYLL_ENV=production bundle exec jekyll build --trace
 
