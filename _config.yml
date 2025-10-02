@@ -1,0 +1,13 @@
+title: Shamith's portfolio
+description: A portfolio website for Shamith.
+
+baseurl: ""
+remote_theme: byanko55/jekyll-professional-resume
+plugins:
+  - jekyll-remote-theme
+  - jekyll-livereload
+
+exclude:
+  - scripts
+  - Gemfile
+  - Gemfile.lock

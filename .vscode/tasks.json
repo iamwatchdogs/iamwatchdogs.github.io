@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Jekyll: Serve",
+      "type": "shell",
+      "command": "./scripts/serve.sh",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Jekyll: Build",
+      "type": "shell",
+      "command": "./scripts/build.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Jekyll: Validate",
+      "type": "shell",
+      "command": "./scripts/validate.sh",
+      "problemMatcher": []
+    }
+  ]
+}
